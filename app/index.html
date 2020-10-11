@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+<body>
+<p>Hello World</p>
+<button id="test">Send log</button>
+<script src="../jsnlog.js"></script>
+<script type="text/javascript">
+	const btn = document.getElementById('test');
+	//var appender = JL.createAjaxAppender("example appender");
+
+	btn.addEventListener('click', function(){
+		JL().info('Now send the data to the server')	
+	})
+	// Get all loggers to use this appender
+	/*JL().setOptions({
+	    "appenders": [appender]
+	});*/
+</script>
+</body>
+</html>
